@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="pic/logo.png" class="logo" alt="Logo">
+                <ul>
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#ABOUT">ABOUT</a></li>
+                    <li><a href="#SKILLS">SKILLS</a></li>
+                    <li><a href="#CONTACT">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Computer Networking</p>
+                <h1>Hi, I'm <span>Dhaven</span> Jun<br>Plata</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--------- About Section --------->
+    <div id="ABOUT">
+        <div class="container">
+            <div class="row">
+                <div class="ABOUT-col-1">
+                    <img src="pic/about.jpg" width="400" height="500" alt="About Me">
+                </div>
+                <div class="ABOUT-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate student/enthusiast in the field of networking. Currently pursuing a Bachelor’s 
+                        degree in Information Technology with a focus on networking, I have developed a solid foundation 
+                        in network design, security, and troubleshooting.</p>
+                    <p>I enjoy exploring various networking protocols and technologies, and I have hands-on experience
+                         with configuring routers and switches in lab environments. My goal is to enhance my skills in 
+                         network security and cloud networking, and I am eager to take on real-world challenges.</p>
+                    <p>I am excited about the opportunities in the networking field, particularly in how they intersect
+                         with emerging technologies like IoT. I look forward to connecting with others in the industry and
+                        sharing knowledge!</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="showTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="showTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="showTab('education')">Education</p>
+                    </div>
+                    
+                    <div class="tab-contents active" id="skills">
+                        <ul>
+                            <li><strong>Wireless Networking:</strong> Understanding Wi-Fi standards (like 802.11) and managing wireless networks.</li>
+                            <li><strong>Cloud Networking:</strong> Familiarity with cloud service models (IaaS, PaaS, SaaS) and how networking operates in cloud environments.</li>
+                            <li><strong>Protocols and Standards:</strong> Knowledge of TCP/IP, DNS, DHCP, and other essential networking protocols.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><strong>Hands-On Projects:</strong>
+                                <br>Start small by working with IoT platforms like Arduino or Raspberry Pi. Create simple projects like home automation or environmental monitoring systems.
+                            </li>
+                            <li><strong>Smart Home Projects:</strong>
+                                <br>Integrate networking and IoT by building smart home solutions that require a solid understanding of both areas.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><strong>Bachelor of Science in Information Technology Major in Networking</strong> - Batangas State University (2025-2026)
+                                <br>Troubleshooting and Diagnostic Skills: The ability to quickly identify and resolve network issues using tools like Wireshark or ping.
+                            </li>
+                            <li><strong>Web Development Bootcamp</strong> - Understanding of IoT: 
+                                <br>Knowledge of Internet of Things (IoT) devices and how they connect and communicate over networks.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <!--------- Skills Section --------->
+    <div id="SKILLS">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+                <div class="skill-item">
+                    <h3>Wireless Networking</h3>
+                </div>
+                <div class="skill-item">
+                    <h3>Routing and Switching</h3>
+                </div>
+                <div class="skill-item">
+                    <h3>Troubleshoot and Diagnostic Tools</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------- Contact Section --------->
+    <div id="CONTACT">
+        <div class="container">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>If you'd like to get in touch, please fill out the form below!</p>
+            <form action="#" method="POST">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!--------- Footer with Facebook and Gmail Icons --------->
+    <div class="footer">
+        <a href="https://www.facebook.com/share/Kyu8xoebPt9vtw5Y/?mibextid=qi2Omg" target="_blank" aria-label="Facebook Profile">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="mailto:platadhavenjun27@gmail.com" class="gmail" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
