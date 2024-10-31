@@ -180,10 +180,10 @@ form button:hover {
 }
 
 .tab-contents {
-  display: none; /* Hide all contents initially */
+  display: none;
 }
 .tab-contents.active {
-  display: block; /* Show active tab content */
+  display: block; 
 }
 /* Skills section styles */
 .skills-list {
@@ -206,11 +206,11 @@ form button:hover {
   margin: 20px 0;
 }
 .footer a {
-  color: #3b5998; /* Facebook blue */
+  color: #3b5998; 
   font-size: 24px;
   margin: 0 10px;
   text-decoration: none;
 }
 .footer a.gmail {
-  color: #EA4335; /* Gmail red */
+  color: #EA4335;
 }
