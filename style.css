@@ -200,17 +200,35 @@ form button:hover {
   width: 150px;
   color: white;
 }
-/* Footer styles */
+
 .footer {
-  text-align: center;
-  margin: 20px 0;
+    text-align: center;
+    margin: 20px 0;
 }
+
 .footer a {
-  color: #3b5998; 
-  font-size: 24px;
-  margin: 0 10px;
-  text-decoration: none;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease; 
 }
+
+.footer a[href*="facebook"] {
+    color: #3b5998; 
+}
+
 .footer a.gmail {
-  color: #EA4335;
+    color: #EA4335;
+}
+
+.footer a[href*="github"] {
+    color: #333; 
+}
+
+.footer a[href*="instagram"] {
+    color: #E1306C; /
+}
+
+.footer a:hover {
+    opacity: 0.8;
 }
